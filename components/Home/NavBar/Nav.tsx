@@ -1,12 +1,26 @@
+"use client"
 import Logo from '@/components/Helper/Logo'
 import { NAVLINKS } from '@/constant/constant'
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { HiBars3BottomRight } from 'react-icons/hi2'
 
 const Nav = () => {
+
+  const [navBg,setNavBg] = useState(false);
+
+  useEffect(()=>{
+    const handler = ()=>{
+      if(window.scrollY >= 90) setNavBg(true)
+        else setNavBg(false)
+    };
+
+    window.addEventListener('scroll',handler);
+    return ()=> window.removeEventListener('scroll',handler);
+  },[])
+
   return (
-    <div className='transition-all duration-200 h-[12vh] z-100 fixed w-full'>
+    <div className={`transition-all duration-200 h-[12vh] z-100 fixed w-full ${navBg ? 'bg-white shadow-md' : 'bg-transparent'}`}>
       <div className='flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto'>
         {/* logo */}
         <Logo/>
