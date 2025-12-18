@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
 import "./globals.css";
 import WrapperNav from "@/components/Home/NavBar/WrapperNav";
+import Footer from "@/components/Home/Footer/Footer";
 
 
 const font = Rubik({
@@ -27,6 +28,7 @@ export default function RootLayout({
       >
         <WrapperNav/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
