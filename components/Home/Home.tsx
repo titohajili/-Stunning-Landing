@@ -3,6 +3,7 @@ import Hero from './Hero/Hero'
 import About from './About/About'
 import WhyChoos from './WhyChoose/WhyChoos'
 import TeamConnect from './TeamConnect/TeamConnect'
+import DownloadSection from './DownloadSection/DownloadSection'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <About/>
       <WhyChoos/>
       <TeamConnect/>
+      <DownloadSection/>
     </div>
   )
 }
