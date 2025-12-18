@@ -5,7 +5,7 @@ const TeamConnect = () => {
       <div className='py-16'>
           <div className='w-[80%] sm:mt-16 mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-8'>
             {/* imahe */}
-            <div>
+            <div data-aos="zoom-in" data-aos-anchor-placement="top-center">
                 <Image src={'/images/w2.png'} alt='img' width={600} height={600} />
             </div>
             {/* text content */}

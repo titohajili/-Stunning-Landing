@@ -23,7 +23,7 @@ const WhyChoos = () => {
             </div>
         </div>
         {/* imahe */}
-        <div>
+        <div data-aos="zoom-in" data-aos-anchor-placement="top-center">
             <Image src={'/images/w1.png'} alt='img' width={600} height={600} />
         </div>
       </div>

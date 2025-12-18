@@ -8,7 +8,7 @@ const About = () => {
     <div className='py-24 bg-[#6a26da]'>
       <div className='w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-8'>
         {/* image */}
-        <div>
+        <div data-aos="zoom-in" data-aos-anchor-placement="top-center">
             <Image src={"/images/about.png"} alt='about' width={800} height={800} />
         </div>
         {/* text content */}

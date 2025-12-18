@@ -2,7 +2,7 @@ import React from 'react'
 
 const DownloadSection = () => {
   return (
-    <div className='w-full flex justify-center min-h-screen items-center px-4 py-10'>
+    <div data-aos="zoom-out" className='w-full flex justify-center min-h-screen items-center px-4 py-10'>
       <div className='relative  w-full max-w-6xl min-h-45 md:h-50 rounded-2xl overflow-hidden shadow-lg flex items-center '>
         {/* background */}
         <div className='absolute inset-0 bg-indigo-600'></div>
